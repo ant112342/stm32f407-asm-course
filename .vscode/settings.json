@@ -1,0 +1,16 @@
+{
+    "files.associations": {
+        "*.s": "arm",
+        "*.S": "arm",
+        "*.ld": "linkerscript"
+    },
+    "[arm]": {
+        "editor.tabSize": 4,
+        "editor.insertSpaces": true
+    },
+    // Show register values in hex (more useful for embedded)
+    "cortex-debug.variableUseNaturalFormat": false,
+    "files.exclude": {
+        "**/build": true
+    }
+}

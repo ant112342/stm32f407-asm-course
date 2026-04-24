@@ -1,0 +1,8 @@
+{
+    "recommendations": [
+        "marus25.cortex-debug",      // REQUIRED: registers, peripherals, memory panels
+        "dan-c-underwood.arm",       // ARM assembly syntax highlighting
+        "zixuanwang.linkerscript",   // linker script syntax highlighting
+        "ms-vscode.hexeditor"        // inspect .bin / .hex files
+    ]
+}

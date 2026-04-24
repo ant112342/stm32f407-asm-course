@@ -1,0 +1,60 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build",
+      "type": "shell",
+      "command": "make",
+      "args": [
+        "PROJECT=${input:projectPath}"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "flash",
+      "type": "shell",
+      "command": "make",
+      "args": [
+        "flash",
+        "PROJECT=${input:projectPath}"
+      ],
+      "group": "build",
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "clean",
+      "type": "shell",
+      "command": "make",
+      "args": [
+        "clean"
+      ],
+      "group": "build",
+      "problemMatcher": []
+    }
+  ],
+  "inputs": [
+    {
+      "id": "projectPath",
+      "type": "pickString",
+      "description": "Select project:",
+      "options": [
+        "examples/mov_operations",
+        "examples/add_sub_operations",
+        "labs/lab01_basic_operations",
+      ],
+      "default": "examples/mov_operations"
+    }
+  ]
+}
